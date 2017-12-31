@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+padding: 0
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: SanFranciscoDisplay;
+  src: url('../fonts/SanFranciscoDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: Epicoff;
+  src: url('../fonts/Epicoff-Regular.otf');
+}
+
+@font-face {
+  font-family: Fold;
+  src: url('../fonts/Degarism Studio - Fold-No.21-Mono.ttf');
+}
+
+@font-face {
+  font-family: RobotoMono;
+  src: url('../fonts/RobotoMono-Regular.ttf');
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+#ads-top {
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #333333;
+}
+
+#ads-top img {
+  margin: 25px 0;
+}
+
+#header {
+  margin: auto;
+  width: 1040px;
+  height: 190px;
+  text-align: center;
+  padding: auto;
+}
+
+#header img {
+  margin: 34px;
+}
+
+#navigation {
+  margin: auto;
+  width: 1036px;
+  height: 48px;
+  font-family: SanFranciscoDisplay;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: 2px #000 solid;
+}
+
+#navigation ul {
+  height: 100%;
+  display: inline-block;
+  list-style: none;
+  padding-top: 15px;
+}
+
+#navigation ul li {
+  margin: auto 25px;
+  display: inline-block;
+}
+
+#intro {
+  margin: auto;
+  margin-top: 4px;
+  width: 1040px;
+  height: 1053px;
+}
+
+#intro .plan {
+  width: auto;
+  height: auto;
+  font-family: Epicoff;
+  font-size: 118px;
+  border: 2px #000 solid;
+  border-bottom: 0px;
+}
+
+#intro .plan .content {
+  padding: 42px 45px 0 45px;
+}
+
+#intro .plan .content .banner {
+  text-transform: uppercase; 
+  font-weight: bold;
+}
+
+#intro .plan .content .banner .arr {
+  margin: 0px 22px 10px 22px;
+}
+
+#intro .plan .content .banner .plane {
+  transform: translateX(100px);
+}
+
+#intro .plan .content .banner p {
+  top: ;ransform: rotate(270deg) translate(25px, 40px); 
+  display: inline-block; 
+  font-family: Fold; 
+  font-size: 19px;
+}
+
+#intro .plan .content .aside {
+  margin-top: 32px;
+  width: 200px; 
+  height: 220px; 
+  background-color: #000; 
+  position: relative; 
+  padding: 30px 25px 30px 25px; 
+  color: #fff; 
+  float: left;
+}
+
+#intro .plan .content .aside .tem:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  clip-path: polygon(0 100%, 100% 0, 100% 0, 100% 100%);
+}
+
+#intro .plan .content .aside .trieu {
+  margin-top: -20px; 
+  font-family: Fold; 
+  text-transform: uppercase; 
+  font-size: 34px;
+}
+
+#intro .plan .content .aside .tong {
+  font-family: RobotoMono; 
+  font-size: 22px; 
+  margin-top: 15px;
+}
+
+#intro .plan .content .aside img {
+  float: right;
+  transform: rotate(270deg);
+}
+
+#intro .plan .content .main {
+  height: 280px; 
+  float: right; 
+  margin-top: 32px; 
+  position: relative;
+}
+
+#intro .plan .content .main .top {
+  height: 80px; 
+  width: 663px; 
+  background-color: #fad123;
+}
+
+#intro .plan .content .main .top .cutm-name {
+  width: 400px; 
+  position: absolute; 
+  font-size: 44px; 
+  font-family: RobotoMono; 
+  background-color: #fad123; 
+  border: 0 #fff solid; 
+  color: #fff; 
+  padding: 11px 17px;
+}
+
+#intro .plan .content .main .top button {
+  position: absolute; 
+  right: 28px; 
+  background-color: #000; 
+  border: 0 #000 solid; 
+  color: #fff;
+  width: 106px; 
+  height: 45px; 
+  font-size: 36px; 
+  font-family: Epicoff; 
+  margin-top: 17px; 
+  text-transform: uppercase;
+}
+
+#intro .plan .content .main .top .zizac {
+  background: url('../image/zizac-ver.jpg'); 
+  background-repeat: repeat-y; 
+  position: absolute; 
+  height: 80px; 
+  width: 10px; 
+  right: 0;
+}
+
+#intro .plan .content .main .left {
+  display: inline-block; 
+  width: 115px;
+}
+
+#intro .plan .content .main .left .dangki {
+  margin-top: 10px; 
+  font-family: Fold; 
+  text-transform: uppercase; 
+  font-size: 14px; 
+  font-weight: bold;
+}
+
+#intro .plan .content .main .left .bg-dot {
+  margin-top: 5px; 
+  background: url('../image/bg-dot.jpg'); 
+  background-repeat: repeat; 
+  position: absolute; 
+  height: 80px; 
+  width: 115px; 
+  left: 0;
+}
+
+#intro .plan .content .main .left .khoihanh {
+  margin-top: 100px; 
+  font-family: RobotoMno; 
+  font-size: 26px; 
+  width: 60px;
+}
+
+#intro .plan .content .main .right {
+  display: inline-block; 
+  height: 187px; 
+  position: absolute; 
+  margin-left: 20px; 
+  font-family: RobotoMono; 
+  font-size: 22px;
+}
+
+#intro .plan .content .main .right .info {
+  background-color: #231f20; 
+  width: 249px; 
+  height: 36px; 
+  color: #fff; 
+  margin-top: 30px; 
+  display: inline-block;
+}
+
+#intro .plan .content .main .right .info img {
+  margin-left: 10px;
+}
+
+#intro .plan .content .main .right .barcode {
+  display: inline-block; 
+  position: relative; 
+  top: 12px; 
+  left: 90px;
+}
+
+#intro .plan .content .main .right .timer {
+  font-family: Fold; 
+  font-size: 19px; 
+  margin: 33px 0 0 0;
+}
+
+#intro .plan .content .main .right .timing {
+  font-family: Epicoff; 
+  font-size: 90px;
+}
+
+#intro .plan .dash {
+  background: url('../image/zizac-solid.jpg'); 
+  border-top: 2px #000 dashed; 
+  background-repeat:repeat-x; 
+  width: 1040; 
+  margin-top: 30px;
+}
+
+#intro .plan .bottom {
+  background: url('../image/zizac-solid.jpg'); 
+  background-repeat: 
+  repeat-x; 
+  width: 100%;
+  height: 24px; 
+  position: relative; 
+  top: 10px;
+}
+
+.cutter {
+  width: 100%;
+  height: 50px;
+  margin-top: 18px;
+  background: url('../image/bg-dot.jpg');
+  background-repeat: repeat;
+}
+
+.introduce {
+  margin-top: 23px;
+  width: 100%;
+}
+
+.introduce:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.intro-content {
+  width: 795px;
+  height: 438px;
+  float: left;
+  font-family: SanfranciscoDisplay;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.intro-content .title {
+  font-family: RobotoMono;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.intro-content .title img {
+  margin-left: 27px;
+}
+
+.intro-aside {
+  width: 215px;
+  height: 430px;
+  border-top: 8px #fad123 solid;
+  float: right;
+  background-color: #222222;
+  font-family: RobotoMono;
+  font-size: 22px;
+  color: #fff;
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+}
+
+.intro-aside .tem {
+  content: "";
+  width: 37px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  clip-path: polygon(0 100%, 0% 0, 0% 0%, 100% 100%);
+}
+
+.intro-aside img {
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+#photo-of-day {
+  margin: auto;
+  width: 1371px;
+  height: 700px;
+  background-color: #ff0
+}
+
+#on-the-road {
+  margin: auto;
+  width: 1371px;
+  height: 1063px;
+  background-color: #080;
+}
+
+#submission {
+  margin: auto;
+  width: 1050px;
+  height: 1372px;
+  background-color: #088;
+}
+
+#ads-middle {
+  margin: auto;
+  width: 1371px;
+  height: 326px;
+  background-color: #800;
+}
+
+#news {
+  margin: auto;
+  width: 1040px;
+  height: 1068px;
+  background-color: #880;
+}
+
+#qna {
+  margin: auto;
+  width: 1040px;
+  height: 476px;
+  background-color: #888;
+}
+
+#footer {
+  margin: auto;
+  width: 100%;
+  height: 138px;
+  background-color: #f00;
+}
