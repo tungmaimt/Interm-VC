@@ -523,7 +523,7 @@ body {
 }
 
 #on-the-road .line1 {
-  width: 205px;
+  width: 200px;
   height: 2px;
   background: url('../image/bg-dashed-gray.png');
   background-repeat: repeat-x;
@@ -587,6 +587,56 @@ body {
   width: 1050px;
   height: 1372px;
   background-color: #088;
+  font-family: RobotoMono;
+}
+
+#submission .head {
+  width: 1040px;
+  height: 206px;
+  border-top: 4px #000 solid;
+  border-bottom: 1px #d5d5d5 solid;
+  margin-left: 10px;
+}
+
+#submission .head .above {
+  font-family: Epicoff;
+  font-size: 160px;
+}
+
+#submission .head .above .counting {
+  display: inline-block;
+}
+
+#submission .head .above .counting img {
+  vertical-align: top;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#submission .head .above .leaf-left {
+  position: relative;
+  left: 102px;
+}
+
+#submission .head .above .leaf-right {
+  position: relative;
+  left: 67px;
+}
+
+#submission .head .below {
+  font-size: 32px;
+  margin-top: -20px;
+  font-weight: bold;
+}
+
+#submission .head .below .below-left {
+  display: inline-block;
+  margin-left: 595px;
+}
+
+#submission .head .below .below-right {
+  display: inline-block;
+  margin-left: 10px;
 }
 
 #ads-middle {
