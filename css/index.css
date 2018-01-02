@@ -14,6 +14,11 @@ body {
 }
 
 @font-face {
+  font-family: SanFranciscoDisplay-Bold;
+  src: url('../fonts/SanFranciscoDisplay-Bold.ttf');
+}
+
+@font-face {
   font-family: Epicoff;
   src: url('../fonts/Epicoff-Regular.otf');
 }
@@ -38,6 +43,10 @@ body {
   visibility: hidden;
   display: block;
   clear: both;
+}
+
+#main {
+  background: url('../image/bg-traveler.jpg') center 205px no-repeat white;
 }
 
 #ads-top {
@@ -68,12 +77,13 @@ body {
   margin: auto;
   width: 1036px;
   height: 48px;
-  font-family: SanFranciscoDisplay;
+  font-family: SanFranciscoDisplay-Bold;
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-align: center;
   border: 2px #000 solid;
+  background: #fff;
 }
 
 #navigation ul {
@@ -102,6 +112,7 @@ body {
   font-size: 118px;
   border: 2px #000 solid;
   border-bottom: 0px;
+  background: #fff;
 }
 
 #intro .plan .content {
@@ -122,7 +133,8 @@ body {
 }
 
 #intro .plan .content .banner p {
-  top: ;ransform: rotate(270deg) translate(25px, 40px); 
+  top: ;
+  transform: rotate(270deg) translate(25px, 40px); 
   display: inline-block; 
   font-family: Fold; 
   font-size: 19px;
@@ -153,7 +165,7 @@ body {
 #intro .plan .content .aside .trieu {
   margin-top: -20px; 
   font-family: Fold; 
-  text-transform: uppercase; 
+  /*text-transform: uppercase; */
   font-size: 34px;
 }
 
@@ -257,10 +269,11 @@ body {
 #intro .plan .content .main .right .info {
   background-color: #231f20; 
   width: 249px; 
-  height: 36px; 
+  height: 33px; 
   color: #fff; 
   margin-top: 30px; 
   display: inline-block;
+  padding-top: 3px;
 }
 
 #intro .plan .content .main .right .info img {
@@ -286,10 +299,10 @@ body {
 }
 
 #intro .plan .dash {
-  background: url('../image/zizac-solid.jpg'); 
-  border-top: 2px #000 dashed; 
+  background: url('../image/bg-dashed.jpg'); 
+  /*border-top: 2px #000 dashed; */
+  height: 2px;
   background-repeat:repeat-x; 
-  width: 1040; 
   margin-top: 30px;
 }
 
@@ -326,8 +339,8 @@ body {
   width: 795px;
   height: 438px;
   float: left;
-  font-family: SanfranciscoDisplay;
-  font-weight: bold;
+  font-family: SanfranciscoDisplay-Bold;
+  /*font-weight: bold;*/
   font-size: 30px;
 }
 
@@ -374,16 +387,199 @@ body {
 
 #photo-of-day {
   margin: auto;
-  width: 1371px;
-  height: 700px;
-  background-color: #ff0
+  margin-top: 87px;
+  font-family: RobotoMono;
+  position: relative;
+}
+
+#photo-of-day .title {
+  font-size: 46px;
+  position: absolute;
+  top: 40px;
+  left: 165px;
+  color: #fff;
+}
+
+#photo-of-day .desc {
+  font-size: 22px;
+  position: absolute;
+  color: #fff;
+  bottom: 20px;
+  left: 165px;
+}
+
+#photo-of-day .desc img {
+  vertical-align: middle;
+}
+
+#photo-of-day .logo {
+  position: absolute;
+  bottom: 30px;
+  right: 95px;
 }
 
 #on-the-road {
   margin: auto;
-  width: 1371px;
-  height: 1063px;
-  background-color: #080;
+  margin-top: 108px;
+  width: 1195px;
+  height: 744px;
+  text-align: center;
+  font-family: Fold;
+  font-size: 30px;
+  position: relative;
+}
+
+#on-the-road .head {
+  font-family: RobotoMono;
+  font-size: 80px;
+  color: #fff;
+  margin: auto;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 2px #f2f2f2;
+}
+
+#on-the-road .source1 {
+  margin-top: 35px;
+  text-align: left;
+  float: left;
+  height: 270px;
+}
+
+#on-the-road .source1 .content {
+  margin-top: 15px;
+  padding: 20px 20px 10px 20px;
+  width: 230px;
+  background-color: #222222;
+  font-family: Arial;
+  font-size: 14px;
+  color: #bbbbbb;
+  position: relative;
+}
+
+#on-the-road .source1 .content .text {
+  display: inline-block;
+  width: 112px;
+}
+
+
+#on-the-road .source1 .content .icon {
+  margin-top: 0;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: 20px;
+}
+
+#on-the-road .source1 .content .arr {
+  display: block;
+  position: relative;
+  left: 198px;
+}
+
+
+#on-the-road .source1 .icon {
+  margin-top: 53px;
+  margin-left: 104px;
+}
+
+#on-the-road .source2 {
+  float: left;
+  margin-left: 60px;
+  text-align: left;
+}
+
+#on-the-road .source2 .board {
+  margin-left: 96px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#on-the-road .source2 .compass {
+  margin-top: 65px;
+  margin-left: 50px;
+}
+
+#on-the-road .source3 {
+  float: left;
+  margin-left: 41px;
+}
+
+#on-the-road .source3 .text {
+  width: 105px;
+  height: 130px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-align: left;
+  position: relative;
+  left: 75px;
+  bottom: 322px;
+}
+
+#on-the-road .source3 .worldwide {
+  font-size: 60px;
+  position: relative;
+  left: 30px;
+  bottom: 455px;
+}
+
+#on-the-road .line1 {
+  width: 205px;
+  height: 2px;
+  background: url('../image/bg-dashed-gray.png');
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 270px;
+  top: 222px;
+}
+
+#on-the-road .line2 {
+  width: 178px;
+  height: 2px;
+  background: url('../image/bg-dashed-gray.png');
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 222px;
+  right: 449px;
+}
+
+#on-the-road .line3 {
+  width: 242px;
+  height: 2px;
+  background: url('../image/bg-dashed.jpg');
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 270px;
+  top: 366px;
+}
+
+#on-the-road .line4 {
+  width: 247px;
+  height: 2px;
+  background: url('../image/bg-dashed.jpg');
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 560px;
+  right: 300px;
+}
+
+#on-the-road .line5 {
+  width: 2px;
+  height: 60px;
+  background: url('../image/bg-dashed-ver-black.png');
+  background-repeat: repeat-y;
+  position: absolute;
+  top: 366px;
+  left: 512px;
+}
+
+#on-the-road .line6 {
+  width: 2px;
+  height: 99px;
+  background: url('../image/bg-dashed-ver-black.png');
+  background-repeat: repeat-y;
+  position: absolute;
+  top: 463px;
+  right: 298px;
 }
 
 #submission {
