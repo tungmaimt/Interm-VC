@@ -9,6 +9,11 @@ body {
 }
 
 @font-face {
+  font-family: Dense;
+  src: url('../fonts/Dense-Regular.otf');
+}
+
+@font-face {
   font-family: SanFranciscoDisplay;
   src: url('../fonts/SanFranciscoDisplay-Regular.otf');
 }
@@ -31,6 +36,11 @@ body {
 @font-face {
   font-family: RobotoMono;
   src: url('../fonts/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-Light.otf');
 }
 
 ::placeholder {
@@ -585,8 +595,7 @@ body {
 #submission {
   margin: auto;
   width: 1050px;
-  height: 1372px;
-  background-color: #088;
+  height: 1575px;
   font-family: RobotoMono;
 }
 
@@ -639,11 +648,245 @@ body {
   margin-left: 10px;
 }
 
+/*#submission .content:after {
+  content: "";
+  display: block;
+  clear: both;
+}*/
+
+#submission .content .top:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#submission .content .top {
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 16px;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+
+#submission .content .top .newest {
+  color: #fff;
+  width: 108px;
+  height: 26px;
+  margin-left: 10px;
+  padding-top: 8px;
+  float: left;
+  background-color: #000;
+  text-align: center;
+}
+
+#submission .content .top .topvote {
+  width: 104px;
+  height: 24px;
+  padding-top: 6px;
+  float: left;
+  background-color: #fff;
+  text-align: center;
+  border: 2px #000 solid;
+}
+
+#submission .content .top .viewall {
+  color: #fff;
+  width: 330px;
+  height: 26px;
+  padding-top: 8px;
+  padding: 8px 10px 0 12px;
+  float: right;
+  background-color: #0078c6;
+}
+
+#submission .content .top .viewall img {
+  vertical-align: top;
+  float: right;
+  clear: both;
+}
+
+#submission .content ul {
+  list-style: none;
+  display: inline-block;
+}
+
+#submission .content ul li {
+  display: inline-block;
+  height: 360px;
+  /*width: 317px;*/
+  margin-bottom: 50px;
+}
+
+#submission .content ul li .content {
+  padding: 7px 0 0 7px;
+  border: 2px #000 solid;
+  width: 318px;
+}
+
+#submission .content ul li .content .text img {
+  float: right;
+  margin: 62px 9px 0 0;
+}
+
+#submission .content ul li .content .text {
+  height: 126px;
+  font-size: 18px;
+  background-color: #efefef;
+  border-top: 1px #000 solid;
+  border-left: 1px #000 solid;
+  padding: 15px 0 0 13px;
+}
+
+#submission .content ul .item-top {
+  /*width: 677px;*/
+}
+
+#submission .content ul .item-top .content {
+  width: 677px;
+}
+
+#submission .content ul .item-top .content .text {
+  height: 100px;
+}
+
+#submission .content ul .item-top .content .text img {
+  margin: 60px 9px 0 0;
+}
+
+#submission .content ul li .vote {
+  height: 26px;
+  width: 108px;
+  padding: 11px 0 13px 12px;
+  position: relative;
+  display: inline-block;
+  font-family: Epicoff;
+  font-size: 36px;
+  color: #fff;
+  background-color: #000;
+  left: 10px;
+  bottom: 20px;
+}
+
+#submission .content ul li .vote div {
+  height: 18px;
+  width: 43px;
+  padding: 4px 0 0 7px; 
+  background-color: #0078c6;
+  display: inline-block;
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  transform: rotate(90deg) translate(-45px, -72px);
+}
+
+#submission .content ul li .author {
+  padding: 4px;
+  float: right;
+  background-color: #0078c6;
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#submission .paging ul {
+  list-style: none;
+  margin-left: 9px;
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 22px;
+}
+
+#submission .paging ul li {
+  display: inline-block;
+  border: 1px #000 solid;
+  text-align: center;
+  padding-top: 9px;
+  height: 35px;
+  width: 46px;
+}
+
+#submission .paging ul .selected {
+  background-color: #0078c6;
+  color: #fff;
+}
+
+#submission .paging ul .next {
+  background-color: #0078c6;
+}
+
+#submission .paging ul .next img {
+  vertical-align: top;
+}
+
 #ads-middle {
+  height: 419px;
   margin: auto;
-  width: 1371px;
-  height: 326px;
+  width: 100%;
   background-color: #800;
+  background: url('../image/bg-book-HWG.png') no-repeat center;
+  font-family: SanFranciscoDisplay-Bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#ads-middle .logo {
+  position: relative;
+  top: 155px;
+}
+
+#ads-middle .text {
+  position: relative;
+  display: inline-block;
+  width: 368px;
+  top: 116px;
+}
+
+#ads-middle .text .name {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 39px;
+}
+
+#ads-middle .interact {
+  width: 215px;
+  display: inline-block;
+  position: relative;
+  top: 116px;
+}
+
+#ads-middle .interact .price {
+  font-family: Dense;
+  font-size: 75px;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+#ads-middle .interact button {
+  border: 0px #000 solid;
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 20px;
+  width: 215px;
+  height: 45px;
+  border-radius: 3px;
+}
+
+#ads-middle .interact .preview {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+#ads-middle .interact .booking {
+  background-color: rgba(241, 88, 53, 0.8);
+  color: #fff;
+  margin-top: 12px;
+}
+
+#ads-middle .book {
+  position: absolute;
+  right: 104px;
 }
 
 #news {
