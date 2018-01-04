@@ -444,7 +444,9 @@ body {
 }
 
 #photo-of-day {
+  background: url('../image/image-imageofday.jpg');
   margin: auto;
+  height: 700px;
   margin-top: 87px;
   font-family: RobotoMono;
   position: relative;
@@ -454,7 +456,7 @@ body {
   font-size: 46px;
   position: absolute;
   top: 40px;
-  left: 165px;
+  left: 150px;
   color: #fff;
 }
 
@@ -463,7 +465,7 @@ body {
   position: absolute;
   color: #fff;
   bottom: 20px;
-  left: 165px;
+  left: 150px;
 }
 
 #photo-of-day .desc .icon-imageofday {
