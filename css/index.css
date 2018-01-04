@@ -9,6 +9,11 @@ body {
 }
 
 @font-face {
+  font-family: SanFranciscoDisplay-Semibold;
+  src: url('../fonts/SanFranciscoDisplay-Semibold.otf');
+}
+
+@font-face {
   font-family: Dense;
   src: url('../fonts/Dense-Regular.otf');
 }
@@ -43,9 +48,24 @@ body {
   src: url('../fonts/Gilroy-Light.otf');
 }
 
+/*#header img
+,#submission .content .top .viewall .arr-white{background: url("");}*/
+
 ::placeholder {
     color: #fff;
     opacity: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix-og {
+  clear: both;
 }
 
 .clearfix:after {
@@ -90,7 +110,6 @@ body {
   font-family: SanFranciscoDisplay-Bold;
   font-size: 16px;
   text-transform: uppercase;
-  /*font-weight: bold;*/
   text-align: center;
   border: 2px #000 solid;
   background: #fff;
@@ -134,6 +153,10 @@ body {
   font-weight: bold;
 }
 
+#intro .plan .content hr {
+   border: 2px #333 solid;
+}
+
 #intro .plan .content .banner .arr {
   margin: 0px 22px 10px 22px;
 }
@@ -161,6 +184,11 @@ body {
   float: left;
 }
 
+#intro .plan .content .aside hr {
+  margin-top: 14px;
+   border: 2px #fff solid;
+}
+
 #intro .plan .content .aside .tem:before {
   content: "";
   width: 50px;
@@ -174,8 +202,7 @@ body {
 
 #intro .plan .content .aside .trieu {
   margin-top: -20px; 
-  font-family: Fold; 
-  /*text-transform: uppercase; */
+  font-family: Fold;
   font-size: 34px;
 }
 
@@ -185,7 +212,7 @@ body {
   margin-top: 15px;
 }
 
-#intro .plan .content .aside img {
+#intro .plan .content .aside .arr-yellow {
   float: right;
   transform: rotate(270deg);
 }
@@ -286,7 +313,7 @@ body {
   padding-top: 3px;
 }
 
-#intro .plan .content .main .right .info img {
+#intro .plan .content .main .right .info .rarr-yellow {
   margin-left: 10px;
 }
 
@@ -303,9 +330,31 @@ body {
   margin: 33px 0 0 0;
 }
 
+#intro .plan .content .main .right .timer span:nth-child(1) {
+  margin-left: 95px;
+}
+
+
+#intro .plan .content .main .right .timer span:nth-child(2) {
+  margin-left: 120px;
+}
+
+#intro .plan .content .main .right .timer span:nth-child(3) {
+  margin-left: 140px;
+}
+
 #intro .plan .content .main .right .timing {
   font-family: Epicoff; 
   font-size: 90px;
+}
+
+#intro .plan .content .main .right .timing .arr-black {
+  position: relative; 
+  top: 7px;
+}
+
+#intro .plan .content .main .right .timing .bg-source {
+  margin: 0 20px;
 }
 
 #intro .plan .dash {
@@ -318,8 +367,7 @@ body {
 
 #intro .plan .bottom {
   background: url('../image/zizac-solid.jpg'); 
-  background-repeat: 
-  repeat-x; 
+  background-repeat: repeat-x; 
   width: 100%;
   height: 24px; 
   position: relative; 
@@ -418,7 +466,7 @@ body {
   left: 165px;
 }
 
-#photo-of-day .desc img {
+#photo-of-day .desc .icon-imageofday {
   vertical-align: middle;
 }
 
@@ -452,6 +500,10 @@ body {
   text-align: left;
   float: left;
   height: 270px;
+}
+
+#on-the-road span {
+  color: #009d6a;
 }
 
 #on-the-road .source1 .content {
@@ -511,6 +563,10 @@ body {
 #on-the-road .source3 {
   float: left;
   margin-left: 41px;
+}
+
+#on-the-road .source3 span {
+  margin-left: 290px;
 }
 
 #on-the-road .source3 .text {
@@ -616,7 +672,7 @@ body {
   display: inline-block;
 }
 
-#submission .head .above .counting img {
+#submission .head .above .counting .arr-black {
   vertical-align: top;
   margin-top: 15px;
   margin-left: 15px;
@@ -633,6 +689,7 @@ body {
 }
 
 #submission .head .below {
+  font-family: RobotoMono;
   font-size: 32px;
   margin-top: -20px;
   font-weight: bold;
@@ -700,7 +757,7 @@ body {
   background-color: #0078c6;
 }
 
-#submission .content .top .viewall img {
+#submission .content .top .viewall .arr-white {
   vertical-align: top;
   float: right;
   clear: both;
@@ -724,7 +781,7 @@ body {
   width: 318px;
 }
 
-#submission .content ul li .content .text img {
+#submission .content ul li .content .text .arr-gray {
   float: right;
   margin: 62px 9px 0 0;
 }
@@ -750,7 +807,7 @@ body {
   height: 100px;
 }
 
-#submission .content ul .item-top .content .text img {
+#submission .content ul .item-top .content .text .arr-gray {
   margin: 60px 9px 0 0;
 }
 
@@ -800,7 +857,8 @@ body {
 
 #submission .paging ul li {
   display: inline-block;
-  border: 1px #000 solid;
+  margin-right: -2px;
+  border: 2px #000 solid;
   text-align: center;
   padding-top: 9px;
   height: 35px;
@@ -816,7 +874,7 @@ body {
   background-color: #0078c6;
 }
 
-#submission .paging ul .next img {
+#submission .paging ul .next .arr-white-paging {
   vertical-align: top;
 }
 
@@ -889,23 +947,334 @@ body {
   right: 104px;
 }
 
+#ads-middle .ps {
+  font-family: Arial;
+  font-size: 12px;
+  color: #b8b8b8;
+  text-transform: none;
+  position: absolute;
+  left: 0;
+  bottom: 62px;
+}
+
 #news {
   margin: auto;
+  margin-bottom: 88px;
   width: 1040px;
   height: 1068px;
-  background-color: #880;
+  font-family: RobotoMono;
+}
+
+#news .left {
+  float: left;
+  width: 670px;
+}
+
+#news .left .head {
+  font-family: Epicoff;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  position: relative;
+  height: 64px;
+  padding: 12px 0 0 19px;  
+}
+
+#news .left .head .arr-yellow-news {
+  float: right;
+  margin-right: 25px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+
+#news .left .head .tem:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  clip-path: polygon(0 100%, 100% 0, 100% 0, 100% 100%);
+}
+
+#news .left .content {
+  margin-top: 28px;
+  font-size: 26px;
+}
+
+#news .left .content .item1 {
+  position: relative;
+  height: 396px;
+  margin-bottom: 32px;
+}
+
+#news .left .content .item1 .bg-dot {
+  width: 80px;
+  height: 204px;
+  background: url('../image/bg-dot.jpg');
+  background-repeat: repeat;
+  float: right;
+  margin-right: 40px;
+}
+
+#news .left .content .item1 .intro {
+  background-color: #fff;
+  width: 383px;
+  height: 149px;
+  border: 2px #000 solid;
+  padding: 18px 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#news .left .content .item1 .intro .view {
+  font-size: 16px;
+  text-align: right;
+}
+
+#news .left .content .item1 .intro .view .arr-yellow-news-right {
+  vertical-align: middle;
+}
+
+#news .left .content .item2 {
+  height: 304px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+#news .left .content .item2 .bg-dot {
+  width: 38px;
+  height: 77px;
+  background: url('../image/bg-dot.jpg');
+  background-repeat: repeat;
+  float: left;
+  margin-top: 182px;
+}
+
+#news .left .content .item2 .image-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#news .left .content .item2 .intro {
+  font-size: 24px;
+  background-color: #fff;
+  width: 224px;
+  height: 220px;
+  border: 2px #000 solid;
+  padding: 18px 16px;
+  position: absolute;
+  left: 38px;
+  bottom: 46px;
+}
+
+#news .left .content .item2 .intro .view {
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
+  font-size: 16px;
+  text-align: right;
+}
+
+#news .left .content .item2 .intro .view .arr-yellow-news-right {
+  vertical-align: middle;
+}
+
+#news .left .content .item3 {
+  height: 210px;
+  position: relative;
+}
+
+#news .left .content .item3 .bg-dot {
+  width: 86px;
+  height: 46px;
+  display: inline-block;
+  background: url('../image/bg-dot.jpg');
+  background-repeat: repeat;
+  margin-left: 5px;
+  margin-bottom: 138px;
+}
+
+#news .left .content .item3 .intro {
+  font-size: 21px;
+  background-color: #fff;
+  width: 374px;
+  height: 120px;
+  border: 2px #000 solid;
+  padding: 18px 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#news .left .content .item3 .intro .view {
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
+  font-size: 16px;
+  text-align: right;
+}
+
+#news .left .content .item3 .intro .view .arr-yellow-news-right {
+  vertical-align: middle;
+}
+
+#news .ads {
+  float: right;
+  font-family: SanFranciscoDisplay-Bold;
+  color: #d7d7d7;
+  font-size: 22px;
+  text-align: center;
+  line-height: 500px;
+}
+
+#news .ads .window {
+  width: 330px;
+  height: 500px;
+  background: #ececec;
+  margin-bottom: 32px;
 }
 
 #qna {
   margin: auto;
+  margin-bottom: 65px;
   width: 1040px;
-  height: 476px;
-  background-color: #888;
+}
+
+#qna .head {
+  font-family: RobotoMono;
+  font-size: 80px;
+  color: #fff;
+  height: 86px;
+  border-bottom: 2px #000 solid;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 5px #f2f2f2;
+}
+
+#qna .head .viewall {
+  font-size: 20px;
+  color: #000;
+  text-shadow: none;
+  float: right;
+  margin-top: 50px;
+}
+
+#qna .head .viewall .arr-yellow-qna {
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+#qna .content {
+  font-family: SanFranciscoDisplay;
+  font-size: 15px;
+  border: 2px #000 solid;
+  border-top: 0 #fff solid;
+  position: relative;
+  padding: 30px 30px 50px 18px;
+}
+
+#qna .content .qna-0 {
+  width: 275px;
+  float: left;
+  margin: 17px;
+}
+
+#qna .content .qna-0:nth-child(2) {
+  width: 330px;
+}
+
+#qna .content .qna-0 .question {
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 20px;
+}
+
+#qna .content .tem:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  bottom: -2px;
+  right: -3px;
+  clip-path: polygon(0 100%, 100% 0, 100% 0, 100% 100%);
+}
+
+#qna .content .tem-1:before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background: #000;
+  position: absolute;
+  bottom: -1px;
+  right: -2px;
+  clip-path: polygon(0 100%, 100% 0, 100% 0, 100% 100%);
 }
 
 #footer {
   margin: auto;
-  width: 100%;
+  width: 1040px;
   height: 138px;
-  background-color: #f00;
+  font-family: SanFranciscoDisplay-Bold;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  text-transform: uppercase;
 }
+
+#footer .left {
+  float: left;
+}
+
+#footer .center {
+  float: left;
+  margin-left: 255px;
+}
+
+#footer .center img {
+  margin: 0 20px;
+}
+
+#footer .right {
+  float: right;
+  font-family: SanFranciscoDisplay-Semibold;
+}
+
+/*psrite choi*/
+.logo-clear-sampu, .logo-oppo, .logo-clear, .logo-vietjet, .plane, 
+.arr-black, .arr-black-bold, .icon-rectangle, .logo-kenh14, .icon-imageofday, 
+.arr-yellow, .arr-green, .bg-source, .arr-gray, .arr-yellow-news, 
+.zizac-solid, .bg-dashed-gray, .bg-dashed, .arr-white-paging, .arr-white, 
+.arr-yellow-qna, .arr-yellow-small, .rarr-yellow, .arr-yellow-news-right, .zizac-ver, 
+.bg-dot, .bg-dashed-ver-black
+{ display: inline-block; background: url('../image/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.logo-clear-sampu { background-position: -2px -0px; width: 166px; height: 173px; }
+.logo-oppo { background-position: -2px -175px; width: 151px; height: 70px; }
+.logo-clear { background-position: -2px -247px; width: 150px; height: 70px; }
+.logo-vietjet { background-position: -2px -319px; width: 126px; height: 33px; }
+.plane { background-position: -2px -354px; width: 85px; height: 75px; }
+.arr-black { background-position: -89px -354px; width: 70px; height: 70px; }
+.arr-black-bold { background-position: -89px -426px; width: 61px; height: 55px; }
+.icon-rectangle { background-position: -2px -431px; width: 61px; height: 97px; }
+.logo-kenh14 { background-position: -65px -483px; width: 60px; height: 62px; }
+.icon-imageofday { background-position: -2px -530px; width: 50px; height: 50px; }
+.arr-yellow { background-position: -54px -547px; width: 45px; height: 45px; }
+.arr-green { background-position: -127px -483px; width: 34px; height: 35px; }
+.bg-source { background-position: -127px -520px; width: 34px; height: 62px; }
+.arr-gray { background-position: -130px -319px; width: 33px; height: 32px; }
+.arr-yellow-news { background-position: -2px -582px; width: 33px; height: 33px; }
+.zizac-solid { background-position: -101px -584px; width: 29px; height: 22px; }
+.bg-dashed-gray { background-position: -101px -547px; width: 24px; height: 2px; }
+.bg-dashed { background-position: -101px -551px; width: 24px; height: 2px; }
+.arr-white-paging { background-position: -101px -555px; width: 23px; height: 24px; }
+.arr-white { background-position: -65px -431px; width: 17px; height: 18px; }
+.arr-yellow-qna { background-position: -65px -451px; width: 17px; height: 18px; }
+.arr-yellow-small { background-position: -132px -584px; width: 17px; height: 17px; }
+.rarr-yellow { background-position: -37px -594px; width: 16px; height: 15px; }
+.arr-yellow-news-right { background-position: -155px -175px; width: 11px; height: 12px; }
+.zizac-ver { background-position: -155px -189px; width: 11px; height: 20px; }
+.bg-dot { background-position: -155px -211px; width: 8px; height: 8px; }
+.bg-dashed-ver-black { background-position: -155px -221px; width: 2px; height: 24px; }
